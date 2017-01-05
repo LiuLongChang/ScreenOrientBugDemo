@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecoundViewController" customModule="ControlOrient" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6u-YN-ie0">
+                    <rect key="frame" x="130" y="318.5" width="115" height="30"/>
+                    <state key="normal" title="Landscape Right"/>
+                    <connections>
+                        <action selector="lr:" destination="-1" eventType="touchUpInside" id="BMy-B5-v3x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EyX-rq-Nu2">
+                    <rect key="frame" x="134.5" y="377.5" width="106" height="30"/>
+                    <state key="normal" title="Landscape Left"/>
+                    <connections>
+                        <action selector="LandscapeToLeft:" destination="-1" eventType="touchUpInside" id="ozN-aC-vx9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sK-G8-3tr">
+                    <rect key="frame" x="161" y="259.5" width="52" height="30"/>
+                    <state key="normal" title="Portrait"/>
+                    <connections>
+                        <action selector="Por:" destination="-1" eventType="touchUpInside" id="fj5-4c-d5v"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="y6u-YN-ie0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Djo-30-jYT"/>
+                <constraint firstItem="y6u-YN-ie0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="IIx-S5-UlE"/>
+                <constraint firstItem="9sK-G8-3tr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SnK-70-MP6"/>
+                <constraint firstItem="EyX-rq-Nu2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZwN-Qw-RCG"/>
+                <constraint firstItem="EyX-rq-Nu2" firstAttribute="top" secondItem="y6u-YN-ie0" secondAttribute="bottom" constant="29" id="ajL-61-90V"/>
+                <constraint firstItem="y6u-YN-ie0" firstAttribute="top" secondItem="9sK-G8-3tr" secondAttribute="bottom" constant="29" id="cEH-c4-eQa"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
