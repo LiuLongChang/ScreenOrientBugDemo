@@ -33,6 +33,10 @@ class ScreenManagerTool {
     
     func changeOrientation(_ orientation: UIInterfaceOrientation) {
         ScreenManager.allowRotate = true
+        print("\(UIDevice.current.value(forKey: "orientation"))")
+        
+        UIDevice.current.setValue(UIInterfaceOrientation.unknown.rawValue, forKey: "orientation")
+        
         UIDevice.current.setValue(orientation.rawValue, forKey: "orientation")
         ScreenManager.allowRotate = false
     }

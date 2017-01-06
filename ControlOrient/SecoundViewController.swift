@@ -24,9 +24,12 @@ class SecoundViewController: UIViewController {
     
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return [.all]
+        if ScreenManager.allowRotate {
+            return [.all]
+        } else {
+            return .portrait
+        }
     }
-
 
     @IBAction func Por(_ sender: Any) {
         ScreenManager.changeOrientation(.portrait)
@@ -38,5 +41,9 @@ class SecoundViewController: UIViewController {
     
     @IBAction func LandscapeToLeft(_ sender: Any) {
         ScreenManager.changeOrientation(.landscapeLeft)
+    }
+    
+    @IBAction func upsideDown(_ sender: Any) {
+            ScreenManager.changeOrientation(.portraitUpsideDown)
     }
 }

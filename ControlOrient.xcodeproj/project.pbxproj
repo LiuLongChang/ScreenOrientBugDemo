@@ -320,6 +320,7 @@
 				6A165F641E1E3942001C7B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

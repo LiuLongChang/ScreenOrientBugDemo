@@ -40,15 +40,24 @@
                         <action selector="Por:" destination="-1" eventType="touchUpInside" id="fj5-4c-d5v"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhi-AK-qYt">
+                    <rect key="frame" x="141.5" y="432" width="92" height="30"/>
+                    <state key="normal" title="Upside Down"/>
+                    <connections>
+                        <action selector="upsideDown:" destination="-1" eventType="touchUpInside" id="dqT-YD-bhv"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="bhi-AK-qYt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bip-Yq-4Rm"/>
                 <constraint firstItem="y6u-YN-ie0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Djo-30-jYT"/>
                 <constraint firstItem="y6u-YN-ie0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="IIx-S5-UlE"/>
                 <constraint firstItem="9sK-G8-3tr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SnK-70-MP6"/>
                 <constraint firstItem="EyX-rq-Nu2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZwN-Qw-RCG"/>
                 <constraint firstItem="EyX-rq-Nu2" firstAttribute="top" secondItem="y6u-YN-ie0" secondAttribute="bottom" constant="29" id="ajL-61-90V"/>
                 <constraint firstItem="y6u-YN-ie0" firstAttribute="top" secondItem="9sK-G8-3tr" secondAttribute="bottom" constant="29" id="cEH-c4-eQa"/>
+                <constraint firstItem="bhi-AK-qYt" firstAttribute="top" secondItem="EyX-rq-Nu2" secondAttribute="bottom" constant="25" id="k2E-GI-oTE"/>
             </constraints>
         </view>
     </objects>
